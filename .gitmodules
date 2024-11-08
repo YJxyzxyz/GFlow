@@ -1,0 +1,9 @@
+[submodule "third_party/msplat"]
+	path = third_party/msplat
+	url = https://github.com/pointrix-project/msplat.git
+[submodule "third_party/unimatch"]
+	path = third_party/unimatch
+	url = https://github.com/autonomousvision/unimatch.git
+[submodule "third_party/mast3r"]
+	path = third_party/mast3r
+	url = https://github.com/naver/mast3r.git

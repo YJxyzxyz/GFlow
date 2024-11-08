@@ -1,0 +1,7 @@
+__pycache__
+*.pyc
+*.pyo
+data/
+logs/
+_logs/
+tracking_results/
