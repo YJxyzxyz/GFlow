@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Activate the conda environment
+source activate 4D
+
 # Check if parent_dir argument is provided
 if [ -z "$1" ]; then
     echo "Usage: $0 parent_dir [gpu_id] [seg_size] [scene_graph]"

@@ -81,7 +81,7 @@ def inference_mast3r(model, device, images_list, input_dir, cache_dir,
     """
     imgs = load_images(images_list, size=512, verbose=True)
     image0 = imageio.imread(images_list[0])
-    orig_size = image0.shape[:2][::-1]
+    orig_size = image0.v2.shape[:2][::-1]
 
     if len(imgs) == 1:
         imgs = [imgs[0], copy.deepcopy(imgs[0])]
