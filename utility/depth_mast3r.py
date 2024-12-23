@@ -106,7 +106,7 @@ def inference_mast3r(model, device, images_list, input_dir, cache_dir,
     scene = sparse_global_alignment(images_list, pairs, cache_dir,
                                     model, lr1=lr1, niter1=niter1, lr2=lr2, niter2=niter2, device=device,
                                     opt_depth='depth' in optim_level, shared_intrinsics=shared_intrinsics,
-                                    matching_conf_thr=matching_conf_thr, subsample=2, **kw)
+                                    matching_conf_thr=matching_conf_thr, subsample=8, **kw)
 
 
     # retrieve useful values from scene:
