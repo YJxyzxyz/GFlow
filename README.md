@@ -231,3 +231,22 @@ depthfucation 阈值
 5.第一帧的优化
 
 viewer.py 可以看网页
+
+
+
+将代码中的下采样倍数从八倍改成两倍之后可以正常生成深度图，但是分辨率不够，需要debug;
+
+```python
+# Sparse GA (forward mast3r -> matching -> 3D optim -> 2D refinement -> triangulation)
+scene = sparse_global_alignment(images_list, pairs, cache_dir,
+                                model, lr1=lr1, niter1=niter1, lr2=lr2, niter2=niter2, device=device,
+                                opt_depth='depth' in optim_level, shared_intrinsics=shared_intrinsics,
+                                matching_conf_thr=matching_conf_thr, subsample=8, **kw)
+```
+
+
+
+subsample=2或者4是生成的深度图带有强烈的条纹纹影?
+
+
+
